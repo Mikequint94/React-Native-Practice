@@ -46,7 +46,11 @@ export default class App extends Component <{}> {
         </Text>
           <Button style={{padding:20, flex: 1, flexDirection: 'column', justifyContent: 'space-between', width:200}}
             onPress={() => { Actions.bananas()}}
-            title="Press Me"
+            title="Press Me for bananas"
+          />
+          <Button style={{padding:20, flex: 1, flexDirection: 'column', justifyContent: 'space-between', width:200}}
+            onPress={() => { Actions.record()}}
+            title="Press Me to record"
           />
         <ScrollView>
 

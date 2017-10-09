@@ -37,4 +37,4 @@ const styles = StyleSheet.create({
     fontSize: 18,
     height: 44,
   },
-})
+});

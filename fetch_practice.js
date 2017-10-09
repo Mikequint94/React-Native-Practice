@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { ActivityIndicator, ListView, Text, View } from 'react-native';
+import { Actions } from 'react-native-router-flux';
+
 
 export default class Movies extends Component {
   constructor(props) {
@@ -41,6 +43,9 @@ export default class Movies extends Component {
           dataSource={this.state.dataSource}
           renderRow={(rowData) => <Text>{rowData.title}, {rowData.releaseYear}</Text>}
         />
+      <Text onPress={() => Actions.sectionlist()}>
+          Press for Next
+        </Text>
       </View>
     );
   }

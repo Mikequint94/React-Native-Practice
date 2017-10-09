@@ -4,6 +4,7 @@ import DisplayName from './text_input';
 import SectionListBasics from './section_list';
 import Movies from './fetch_practice';
 import App from './App';
+import RecordVoice from './record_voice';
 
 import {Router, Scene} from 'react-native-router-flux';
 import React, { Component } from 'react';
@@ -23,7 +24,7 @@ const Navigation = () => {
       <Router>
         <Scene key = "root">
           <Scene key="bananas"
-            component={Bananas}>
+            component={Bananas}
             title="Bananas"
             >
           </Scene>
@@ -35,6 +36,16 @@ const Navigation = () => {
             component={App}
             title="App"
             initial>
+        </Scene>
+          <Scene key="record"
+            component={RecordVoice}
+            title="Record Voice"
+            >
+        </Scene>
+          <Scene key="sectionlist"
+            component={SectionListBasics}
+            title="SectionList"
+            >
         </Scene>
         </Scene>
       </Router>
