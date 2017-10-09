@@ -4,7 +4,7 @@ import DisplayName from './text_input';
 import SectionListBasics from './section_list';
 import Movies from './fetch_practice';
 import App from './App';
-import RecordVoice from './record_voice';
+import VoiceTest from './record_voice';
 
 import {Router, Scene} from 'react-native-router-flux';
 import React, { Component } from 'react';
@@ -38,7 +38,7 @@ const Navigation = () => {
             initial>
         </Scene>
           <Scene key="record"
-            component={RecordVoice}
+            component={VoiceTest}
             title="Record Voice"
             >
         </Scene>
